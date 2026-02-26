@@ -1,7 +1,10 @@
-import "./App.css";
-
+import Body from "./components/Body";
 function App() {
-  return <div className="m-4 p-4 font-bold underline">Lets create Notflix</div>;
+  return (
+    <div>
+      <Body />
+    </div>
+  );
 }
 
 export default App;
