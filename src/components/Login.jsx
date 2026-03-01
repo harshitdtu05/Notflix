@@ -20,8 +20,6 @@ const Login = () => {
   const password = useRef(null);
   const name = useRef(null);
   const handleButtonClick = () => {
-    console.log(email);
-    console.log(password);
     const message = checkValidData(email.current.value, password.current.value);
     setErrorMessage(message);
     if (message) return;
@@ -32,14 +30,11 @@ const Login = () => {
         password.current.value
       )
         .then((userCredential) => {
-          // Signed up
           const user = userCredential.user;
           updateProfile(user, {
             displayName: name.current.value,
           })
             .then(() => {
-              // Profile updated!
-              //   navigate("/browse");
               const { uid, email, displayName } = auth.currentUser;
               dispatch(
                 addUser({ uid: uid, email: email, displayName: displayName })
@@ -47,7 +42,6 @@ const Login = () => {
             })
 
             .catch((error) => {
-              // An error occurred
               const errorCode = error.code;
               const errorMessage = error.message;
               setErrorMessage(errorCode + "-" + errorMessage);
@@ -72,7 +66,6 @@ const Login = () => {
         .then((userCredential) => {
           // Signed in
           const user = userCredential.user;
-          console.log(user);
           //   navigate("/browse");
           // ...
         })
@@ -80,7 +73,6 @@ const Login = () => {
           const errorCode = error.code;
           const errorMessage = error.message;
           setErrorMessage(errorCode + "-" + errorMessage);
-          console.log(errorMessage);
         });
     }
   };

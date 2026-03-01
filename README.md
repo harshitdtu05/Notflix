@@ -31,6 +31,7 @@
 - Update store with trailer video data
 - Embedded the YT video on the screen and make it autoplay and mute
 - Tailwind classes to make the Main Container look awesome
+- Build Secondary component
 
 # Features
 
