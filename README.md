@@ -32,6 +32,15 @@
 - Embedded the YT video on the screen and make it autoplay and mute
 - Tailwind classes to make the Main Container look awesome
 - Build Secondary component
+- Built Movie list
+- Built Movie Card
+- Added TMDB image CDN URL
+- Made the browse page better
+- usePopularMovies, useTopRatedMovie, useTrendingMovies custom hooks created
+- GPT search feature
+- GPT search page
+- GPT Search bar
+- (BONUS) Multilanguage feature in the app
 
 # Features
 
