@@ -41,6 +41,7 @@
 - GPT search page
 - GPT Search bar
 - (BONUS) Multilanguage feature in the app
+- Protected API key by setting up .env file
 
 # Features
 
